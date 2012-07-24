@@ -6,7 +6,7 @@
 
 // define the function(s) we want to add
 zend_function_entry otapi_functions[] = {
-  PHP_FE(otapi, NULL)
+  PHP_FE(GetTime, NULL)
   { NULL, NULL, NULL }
 };
 
@@ -27,7 +27,7 @@ zend_module_entry otapi_module_entry = {
 };
 
 // install module
-ZEND_GET_MODULE(otapi)
+ZEND_GET_MODULE(GetTime)
 
 // actual non-template code!
 PHP_FUNCTION(GetTime) {
