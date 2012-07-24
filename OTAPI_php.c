@@ -32,5 +32,5 @@ ZEND_GET_MODULE(otapi)
 // actual non-template code!
 PHP_FUNCTION(GetTime) {
   // php_printf is PHP's version of printf, it's essentially "echo" from C
-  php_printf("In his house at R'lyeh dead Cthulhu waits dreaming.\n");
+  php_printf("We will call Open Transactions GetTime() at this point.\n");
 }
