@@ -6,7 +6,7 @@
 
 // define the function(s) we want to add
 zend_function_entry otapi_functions[] = {
-  PHP_FE(GetTime, NULL)
+  PHP_FE(otapi_GetTime, NULL)
   { NULL, NULL, NULL }
 };
 
@@ -30,7 +30,8 @@ zend_module_entry otapi_module_entry = {
 ZEND_GET_MODULE(otapi)
 
 // actual non-template code!
-PHP_FUNCTION(GetTime) {
+PHP_FUNCTION(otapi_GetTime) {
   // php_printf is PHP's version of printf, it's essentially "echo" from C
-  php_printf("We will call Open Transactions GetTime() at this point.\n");
+  php_printf("We will call Open Transactions otapi_GetTime() at this point.\n");
+  return "Success";
 }
