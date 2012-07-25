@@ -27,7 +27,7 @@ zend_module_entry otapi_module_entry = {
 };
 
 // install module
-ZEND_GET_MODULE(otapi)
+ZEND_GET_MODULE(GetTime)
 
 // actual non-template code!
 PHP_FUNCTION(GetTime) {
