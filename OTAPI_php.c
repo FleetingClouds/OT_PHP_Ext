@@ -31,7 +31,17 @@ ZEND_GET_MODULE(otapi)
 
 // actual non-template code!  This is where the work gets done.
 PHP_FUNCTION(otapi_GetTime) {
-  // php_printf is PHP's version of printf, it's essentially "echo" from C
-  php_printf("We will call Open Transactions otapi_GetTime() at this point.\n");
-  return "Success";
+    // boolean type
+    zend_bool english = 0;
+ 
+    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "b", &english) == FAILURE) {
+        return;
+    }
+ 
+    if (english) {
+        php_printf("In his house at R'lyeh dead Cthulhu waits dreaming.\n");
+    }
+    else {
+        php_printf("Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.\n");
+    }
 }
