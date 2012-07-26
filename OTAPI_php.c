@@ -29,7 +29,7 @@ zend_module_entry otapi_module_entry = {
 // install module
 ZEND_GET_MODULE(otapi)
 
-// actual non-template code!
+// actual non-template code!  This is where the work gets done.
 PHP_FUNCTION(otapi_GetTime) {
   // php_printf is PHP's version of printf, it's essentially "echo" from C
   php_printf("We will call Open Transactions otapi_GetTime() at this point.\n");
