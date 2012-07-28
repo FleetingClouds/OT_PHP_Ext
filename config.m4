@@ -1,11 +1,11 @@
 dnl lines starting with "dnl" are comments
 
-PHP_ARG_ENABLE(otapi_php, whether to enable OTapi extension, [  --enable-otapi_php   Enable OTapi extension])
+PHP_ARG_ENABLE(ot_api_php, whether to enable OTapi extension, [  --enable-ot_api_php   Enable OTapi extension])
 
 if test "$OTAPI_PHP" != "no"; then
 
   dnl this defines the extension
-  PHP_NEW_EXTENSION(otapi_php, OTAPI_php.c, $ext_shared)
+  PHP_NEW_EXTENSION(ot_api_php, OTAPI_php.c, $ext_shared)
 
   dnl this is boilerplate to make the extension work on OS X
   case $build_os in
