@@ -27,7 +27,7 @@ zend_module_entry otapi_module_entry = {
 };
 
 // install module
-ZEND_GET_MODULE(otapi)
+ZEND_GET_MODULE(ot_api_php)
 
 // actual non-template code!  This is where the work gets done.
 PHP_FUNCTION(otapi_GetTime) {
@@ -39,7 +39,7 @@ PHP_FUNCTION(otapi_GetTime) {
     }
  
     if (english) {
-        php_printf("In his house at R'lyeh dead Cthulhu waits dreaming.\n");
+        cthulhu();
     }
     else {
         php_printf("Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn.\n");
